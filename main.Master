@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="LakDeranaPublic.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>LakDerana Hotels</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery-1.6.js"></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>
+    <script type="text/javascript" src="js/Adamina_400.font.js"></script>
+    <script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/kwicks-1.5.1.pack.js"></script>
+    <script type="text/javascript" src="js/atooltip.jquery.js"></script>
+    <!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
+<![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="bg1">
+        <div class="bg2">
+            <div class="main">
+                <!-- header -->
+                <header>
+                    <h1><a href="index.aspx" id="logo">LakDerana</a></h1>
+                    <div class="department">
+                        324 Galle Road, Sea Side,Colombo 03<br>
+                        <span>HotLine: &nbsp; +94 011 256 5656</span>
+                    </div>
+                </header>
+                <div class="box">
+                    <nav>
+                        <ul id="menu">
+                            <li class="active"><a href="index.aspx">Home</a></li>
+                            <li><a href="services.aspx">Services</a></li>
+                            <li><a href="booking.aspx">Booking</a></li>
+                            <li><a href="rooms.aspx">Rooms</a></li>
+                            <li><a href="locations.aspx">Locations</a></li>
+                        </ul>
+                    </nav>
+                    <!-- header end -->
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%-- <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>--%>
+    <div class="main">
+        <!-- footer -->
+        <footer>
+            <div class="col2">
+                Copyright &copy; <a href="#">LakDerana</a> All Rights Reserved | Design by Suath | Udeshika | Naveed | Tiyetra </a>
+                <nav>
+                    <ul id="footer_menu">
+                        <li class="active"><a href="index.aspx">Home</a></li>
+                        <li><a href="services.aspx">Services</a></li>
+                        <li><a href="booking.aspx">Booking</a></li>
+                        <li><a href="rooms.aspx">Rooms</a></li>
+                        <li class="last"><a href="locations.aspx">Locations</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col1 pad_left1">
+                <ul id="icons">
+                    <li><a href="#" class="normaltip">
+                        <img src="images/icon1.jpg" alt=""></a></li>
+                    <li><a href="#" class="normaltip">
+                        <img src="images/icon2.jpg" alt=""></a></li>
+                    <li><a href="#" class="normaltip">
+                        <img src="images/icon3.jpg" alt=""></a></li>
+                    <li><a href="#" class="normaltip">
+                        <img src="images/icon4.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <!-- {%FOOTER_LINK} -->
+        </footer>
+        <!-- footer end -->
+    </div>
+    <script type="text/javascript">Cufon.now();</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.kwicks').kwicks({
+                max: 500,
+                spacing: 0,
+                event: 'mouseover'
+            });
+        })
+    </script>
+</body>
+</html>
